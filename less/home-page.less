@@ -1,5 +1,19 @@
 .home {
 
+  .welcome-section {
+
+    .welcome-content {
+      .flex-layout(column, none, none);
+
+      .welcome-image {
+        margin-bottom: 30px;
+      }
+
+    }
+
+  }
+    
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -52,6 +66,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    .btn {
+      .button();
+    }
 
     .destination {
       width: 30%;
