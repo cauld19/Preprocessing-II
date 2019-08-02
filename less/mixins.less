@@ -1,1 +1,19 @@
 // Mixins in here
+
+.flex-layout(@flex, @justify, @align){
+    display: flex;
+    flex-direction: @flex;
+	justify-content: @justify;
+    align-items: @align;
+}
+
+.btn-layout(@background, @color, @border){
+    background-color: @background;
+    color: @color;
+    border-radius: @border;
+    font-size: 1.6rem;
+    height: 4rem;
+    width: 20rem;
+    text-align: center;
+    line-height: 4rem;
+}
