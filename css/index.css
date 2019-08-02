@@ -1,4 +1,4 @@
-.button {
+.btn {
   background-color: #008080;
   color: #FFFFFF;
   font-size: 1.6rem;
@@ -182,17 +182,16 @@ header {
   margin-top: 30px;
   width: 100%;
 }
-header .header-bar {
+header .header-top {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 92%;
-  padding-left: 9rem;
-  margin-bottom: 30px;
 }
-header .header-bar nav a {
-  padding: 0 1.7rem 0 1.7rem;
+header .header-top nav a {
+  padding: 0 1.5rem 0 1.5rem;
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
@@ -207,6 +206,11 @@ header .header-bar nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .home .welcome-section {
+    border-bottom: 2px dashed #C0C0C0;
+  }
 }
 .home .welcome-section .welcome-content {
   display: flex;

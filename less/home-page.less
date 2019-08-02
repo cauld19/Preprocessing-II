@@ -2,11 +2,16 @@
 
   .welcome-section {
 
+    @media @mobile {
+      border-bottom: 2px dashed @navigation-border;
+    }
+
     .welcome-content {
       .flex-layout(column, none, none);
 
       .welcome-image {
         margin-bottom: 30px;
+
       }
 
     }
@@ -19,8 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -67,8 +70,8 @@
     display: flex;
     justify-content: space-between;
 
-    .btn {
-      .button();
+    button {
+      .btn();
     }
 
     .destination {
