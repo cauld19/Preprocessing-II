@@ -7,10 +7,19 @@ header {
 
     .header-top {
         max-width: 800px;
+        padding: 0 2rem 0 2rem;
         margin: auto;
         .flex-layout(row, space-between, center);
 
+        @media @mobile {
+            .flex-layout(column, space-evenly, center)
+          }
+
         nav{
+            @media @mobile {
+                width: 100%;
+                .flex-layout(row, space-evenly, none)
+            }
             a {
                 padding: 0 1.5rem 0 1.5rem;
                 text-decoration: none;
