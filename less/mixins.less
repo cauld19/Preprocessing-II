@@ -7,12 +7,13 @@
     align-items: @align;
 }
 
-.btn {
-    background-color: #008080;
-    color: @white;
+.btn-layout(@background, @color, @border){
+    background-color: @background;
+    color: @color;
+    border-radius: @border;
     font-size: 1.6rem;
-    border-radius: 1rem;
-    border: none;
     height: 4rem;
     width: 20rem;
+    text-align: center;
+    line-height: 4rem;
 }
